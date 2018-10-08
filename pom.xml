@@ -12,7 +12,7 @@
 	</properties>
 
 	<dependencies>
-	<!-- http://repo.spring.io/release/org/springframework/spring/ -->
+		<!-- http://repo.spring.io/release/org/springframework/spring/ -->
 		<!-- Spring的面向切面编程,提供AOP(面向切面编程)实现 -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -31,8 +31,7 @@
 			<artifactId>spring-beans</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-		<!-- Spring提供在基础IoC功能上的扩展服务，此外还提供许多企业级服务的支持，
-		如邮件服务、任务调度、JNDI定位、EJB集成、远程访问、缓存以及各种视图层框架的封装等 -->
+		<!-- Spring提供在基础IoC功能上的扩展服务，此外还提供许多企业级服务的支持， 如邮件服务、任务调度、JNDI定位、EJB集成、远程访问、缓存以及各种视图层框架的封装等 -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
@@ -129,7 +128,7 @@
 			<artifactId> spring-websocket</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -142,4 +141,19 @@
 			<version>1</version>
 		</dependency>
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.3</version>
+				<configuration>
+					<!-- 指定source和target的版本 -->
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
