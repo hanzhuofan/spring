@@ -20,7 +20,7 @@ public class TestBeanAnnotation extends UnitTestBase {
 		bean.say("This is test.");
 		
 		bean = super.getBean("bean");
-		bean.say("This is test.");
+//		bean.say("This is test.");
 	}
 	
 	@Test

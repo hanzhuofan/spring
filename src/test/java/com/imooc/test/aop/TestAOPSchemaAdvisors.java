@@ -20,7 +20,7 @@ public class TestAOPSchemaAdvisors extends UnitTestBase {
 		service.invoke();
 		
 		System.out.println();
-		service.invokeException();
+//		service.invokeException();
  	}
 
 }

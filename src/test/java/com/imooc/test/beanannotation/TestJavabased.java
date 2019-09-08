@@ -24,8 +24,8 @@ public class TestJavabased extends UnitTestBase {
 	
 	@Test
 	public void testMyDriverManager() {
-		MyDriverManager manager = super.getBean("myDriverManager");
-		System.out.println(manager.getClass().getName());
+//		MyDriverManager manager = super.getBean("myDriverManager");
+//		System.out.println(manager.getClass().getName());
 	}
 	
 	@Test
