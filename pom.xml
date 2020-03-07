@@ -9,7 +9,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<spring.version>4.3.25.RELEASE </spring.version>
+		<spring.version>5.0.15.RELEASE </spring.version>
 	</properties>
 
 	<dependencies>
@@ -63,11 +63,11 @@
 			<version>${spring.version}</version>
 		</dependency>
 		<!-- Spring对Tomcat的连接池的集成 -->
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-instrument-tomcat</artifactId>
-			<version>${spring.version}</version>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>org.springframework</groupId>-->
+<!--			<artifactId>spring-instrument-tomcat</artifactId>-->
+<!--			<version>${spring.version}</version>-->
+<!--		</dependency>-->
 		<!-- JDBC支持包，包括数据源设置和JDBC访问支持 -->
 		<dependency>
 			<groupId>org.springframework</groupId>

@@ -1,8 +1,8 @@
 package com.imooc.beanannotation.jsr;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
-import javax.annotation.Resource;
+//import javax.annotation.PostConstruct;
+//import javax.annotation.PreDestroy;
+//import javax.annotation.Resource;
 import javax.inject.Inject;
 import javax.inject.Named;
 
@@ -22,12 +22,12 @@ public class JsrServie {
 		this.jsrDAO = jsrDAO;
 	}
 	
-	@PostConstruct
+//	@PostConstruct
 	public void init() {
 		System.out.println("JsrServie init.");
 	}
 	
-	@PreDestroy
+//	@PreDestroy
 	public void destroy() {
 		System.out.println("JsrServie destroy.");
 	}
