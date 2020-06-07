@@ -33,7 +33,7 @@ public class UnitTestBase {
 	
 	@After
 	public void after() {
-		context.destroy();
+		context.close();
 	}
 	
 	@SuppressWarnings("unchecked")
