@@ -1,5 +1,9 @@
 package com.demo;
 
+import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
+
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.util.ArrayList;
@@ -72,6 +76,13 @@ class SearchQueryData {
     String sort;
     List<SearchQueryTermData> queryTerms;
 
+    @Transactional(
+            readOnly = false, //读写事务
+            timeout = -1 , //事务的超时时间，-1为无限制
+            noRollbackFor = ArithmeticException.class, //遇到指定的异常不回滚
+            isolation = Isolation.DEFAULT, //事务的隔离级别，此处使用后端数据库的默认隔离级别
+            propagation = Propagation.REQUIRED //事务的传播行为
+    )
     public void setTextSearch(String textSearch) {
         this.textSearch = textSearch;
     }
