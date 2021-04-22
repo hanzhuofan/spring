@@ -92,7 +92,7 @@
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
-            <version>3.5.4</version>
+            <version>3.5.6</version>
         </dependency>
         <!-- JMS支持包，包括辅助类来发送和接收JMS消息 -->
         <dependency>
